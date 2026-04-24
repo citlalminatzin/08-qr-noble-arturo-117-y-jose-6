@@ -2,6 +2,7 @@
 # Práctica 8
 
 ¡Adentrémonos en el increíble mundo del álgebra lineal numérica! OwO
+Este proyecto implementa herramientas para descomponer matrices y encontrar sus valores propios (eigenvalores) utilizando el algoritmo QR basado en la ortonormalización de Gram-Schmidt.
 
 ## Integrantes
 
@@ -9,3 +10,13 @@
 - Hernández Coutiño José de Jesús
 
 ## Uso e instalación
+
+🚀 El proyecto está dividido en módulos jerárquicos para realizar las siguientes operaciones:
+- gram_schmidt.py: Proceso de ortonormalización de vectores para generar bases ortogonales.
+- qr.py: Descomposición de una matriz $A$ en el producto de una matriz ortogonal $Q$ y una triangular superior $R$.
+- eigenvalues.py: Método iterativo para calcular los eigenvalores de una matriz mediante transformaciones de semejanza sucesivas.
+- 
+# Instalación
+
+-  #Uso y Requisitos
+-  Python 3.10 o superior.
