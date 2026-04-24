@@ -12,5 +12,9 @@ def eigenvals(A:list[list[float]], n:int = 100, tolerance = 1e-10)->list[float]:
     """
     Q,R = qr(A)
     for _ in range(n):
-        ...
-    return ...
+     # 1. Descomposición QR de la matriz actual
+      Q, R = qr(A_k)
+        
+        # 2. Nueva matriz: multiplicar R y Q en orden inverso
+      A_next = matmul(R, Q)
+    return eigenvalues
