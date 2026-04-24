@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from eigenvalues import eigenvals
+from linearsolve import solve
 from gram_schmidt import matrix_to_str
 
 def main():
@@ -26,7 +27,30 @@ def main():
             print(f" λ{i+1}: {val:.6f}")
             
     except Exception as e:
-        print(f"Ocurrió un error durante el cálculo: {e}")
+        print(f"Error en eigenvalores: {e}")
+
+    print("\n" + "="*40 + "\n")
+
+    # --- 2: RESOLUCIÓN DE SISTEMA Ax = b ---
+    # Sistema:
+    #  1x + 1y = 2
+    #  1x - 1y = 0
+    # Solución esperada: x=1, y=1
+    A_sys = [
+        [1.0, 1.0],
+        [1.0, -1.0]
+    ]
+    b = [2.0, 0.0]
+    print("RESOLUCIÓN DE SISTEMA Ax = b ===")
+    print("Matriz A:")
+    print(matrix_to_str(A_sys))
+    print(f"Vector b: {b}")
+
+    try:
+        x = solve(A_sys, b)
+        print(f"\nSolución encontrada x: {x}")
+    except Exception as e:
+        print(f"Error en sistema lineal: {e}")
 
 if __name__ == "__main__":
     main()
