@@ -9,14 +9,14 @@ Este proyecto implementa herramientas para descomponer matrices y encontrar sus 
 - Góngora Ramírez Arturo
 - Hernández Coutiño José de Jesús
 
-## Uso e instalación
+## Uso
 
 🚀 El proyecto está dividido en módulos jerárquicos para realizar las siguientes operaciones:
 - gram_schmidt.py: Proceso de ortonormalización de vectores para generar bases ortogonales.
 - qr.py: Descomposición de una matriz $A$ en el producto de una matriz ortogonal $Q$ y una triangular superior $R$.
 - eigenvalues.py: Método iterativo para calcular los eigenvalores de una matriz mediante transformaciones de semejanza sucesivas.
+- linearsolve.py: Este módulo permite resolver sistemas de ecuaciones lineales de la forma $Ax = b$. En lugar de utilizar la inversión de matrices (aprovechando propiedades de la Factorización QR)
 - 
-# Instalación
+### Instalación
 
--  #Uso y Requisitos
 -  Python 3.10 o superior.
