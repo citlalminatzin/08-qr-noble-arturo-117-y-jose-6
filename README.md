@@ -15,7 +15,7 @@ Este proyecto implementa herramientas para descomponer matrices y encontrar sus 
 - qr.py: Descomposición de una matriz $A$ en el producto de una matriz ortogonal $Q$ y una triangular superior $R$.
 - eigenvalues.py: Método iterativo para calcular los eigenvalores de una matriz mediante transformaciones de semejanza sucesivas.
 - linearsolve.py: Este módulo permite resolver sistemas de ecuaciones lineales de la forma $Ax = b$. En lugar de utilizar la inversión de matrices (aprovechando propiedades de la Factorización QR)
-- 
+- main.py: Aquí se resuelven explícitamente los tres ejercicios de la práctica.
 ## Instalación
 
 -  Python 3.10 o superior.
